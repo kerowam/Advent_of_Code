@@ -1,0 +1,15 @@
+Register A: 47792830
+Register B: 0
+Register C: 0
+
+Program: 2,4,1,5,7,5,1,6,4,3,5,5,0,3,3,0
+
+while (1):
+B = A % 8
+B = B ^ 5
+C = A // 2**B
+B = B ^ 6
+B = B ^ C
+print(B % 8)
+A = A // 8
+if A == 0 break
